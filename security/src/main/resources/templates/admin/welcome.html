@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Admin welcome~~~~~~~~!!! ^0^/ !!!</h1>
+<hr>
+<h1>Security Context로부터 얻어낸 UserDetails 객체(사용자정보 객체(Member)를 품은 객체)를 Model로 받아보기</h1>
+<p>username: [[${username}]]</p>
+<p>name: [[${name}]]</p>
+<p>role: [[${role}]]</p>
+<hr>
+<h1>Principal 객체 값을 Model로 받기 : 사용자 인증 정보를 가진 객체</h1>
+<p>username2: [[${username2}]]</p>
+<hr>
+<h2>@AuthenticationPrincipal을 사용하여 UserDetails의 구현체(CustomUserDetails)를 파라미터로 주입받아 사용하기</h2>
+<p>username3 :[[${username2}]]</p>
+<p>name3 :[[${name3}]]</p>
+<p>role3 :[[${role3}]]</p>
+</body>
+</html>
